@@ -1,5 +1,5 @@
-export const apiUrl:string = import.meta.env.VITE_API_URL;
-export const wsUrl:string = import.meta.env.VITE_WS_URL;
+export const apiUrl: string = "http://localhost:8000"
+export const wsUrl: string = "ws://localhost:8000/ws"
 
 
 export const getStatusColor = (status: string) => {
