@@ -12,6 +12,7 @@ function App() {
     <Router>
     <Navbar/>
       <Routes>
+        <Route path="/" element={<OrderFormScreen />} />
         <Route path="/client" element={<ClientDashboard />} />
         <Route path="/order/create" element={<OrderFormScreen />} />
         <Route path="/restaurant/dashboard" element={<RestaurantDashboard />} />
