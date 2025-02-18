@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "restaurantManager": "레스토랑 관리자",
+    "order": "주문",
+    "clientDashboard": "고객 대시보드",
+    "restaurantDashboard": "레스토랑 대시보드"
+  },
+  "clientOrdersTable": {
+    "orderId": "주문 ID",
+    "food": "음식",
+    "quantity": "수량",
+    "status": "상태",
+    "time": "시간"
+  },
+  "ordersTable": {
+    "orderId": "주문 번호",
+    "food": "음식",
+    "quantity": "수량",
+    "status": "상태",
+    "time": "시간",
+    "actions": "작업",
+    "statusOptions": {
+      "received": "접수됨",
+      "preparing": "조리 중",
+      "completed": "완료됨"
+    }
+  },
+  "restaurantOrdersTable": {
+    "orderId": "주문 번호",
+    "food": "음식",
+    "quantity": "수량",
+    "status": "상태",
+    "time": "시간",
+    "actions": "작업",
+    "statusOptions": {
+      "pending": "대기 중",
+      "received": "접수됨",
+      "preparing": "조리 중",
+      "completed": "완료됨"
+    }
+  },
+  "restaurantDashboard": {
+    "orderManagement": "주문 관리"
+  },
+  "clientDashboard": {
+    "orderDashboard": "주문 대시보드"
+  },
+  "orderForm": {
+    "placeYourOrder": "주문하기",
+    "foodNamePlaceholder": "음식 이름",
+    "submitOrder": "주문 제출",
+    "placingOrder": "주문 중...",
+    "successTitle": "성공",
+    "successMessage": "주문이 성공적으로 접수되었습니다!",
+    "errorTitle": "오류",
+    "errorMessage": "주문 접수에 실패했습니다. 다시 시도해주세요."
+  }
+}

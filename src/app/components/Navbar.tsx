@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import LanguageDropdown from "./common/LanguageDropdown.tsx";
 
 const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const navLinks = [
-    { name: "Order", path: "/order/create" },
-    { name: "Client Dashboard", path: "/client" },
-    { name: "Restaurant Dashboard", path: "/restaurant/dashboard" }
-   /*  { name: "Admin", path: "/admin/dashboard" }, */
+    { name: t("navbar.order"), path: "/order/create" },
+    { name: t("navbar.clientDashboard"), path: "/client" },
+    { name: t("navbar.restaurantDashboard"), path: "/restaurant/dashboard" },
   ];
 
   return (
@@ -18,10 +20,10 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-green-600">
-          Restaurant Manager
+          {t("navbar.restaurantManager")}
         </Link>
 
-        {/* Desktop Menu */}
+    
         <div className="hidden md:flex space-x-6">
           {navLinks.map((link) => (
             <Link
@@ -36,9 +38,11 @@ const Navbar: React.FC = () => {
               {link.name}
             </Link>
           ))}
+
+          <LanguageDropdown />
         </div>
 
-        {/* Mobile Menu Button */}
+ 
         <button
           className="md:hidden p-2 text-gray-600"
           onClick={() => setIsOpen(!isOpen)}
@@ -47,7 +51,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+   
       {isOpen && (
         <div className="md:hidden bg-white border-t">
           {navLinks.map((link) => (

@@ -1,12 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../store/store";
-import { Order } from "../../../libs/types/Order.ts";
-import { getStatusColor } from "../../../libs/config.ts";
-
+import { Order } from "../../../libs/types/Order";
+import { getStatusColor } from "../../../libs/config";
+import { useTranslation } from "react-i18next";
 
 export const ClientOrdersTable: React.FC = () => {
   const orders = useSelector((state: RootState) => state.orders.orders);
+  const { t } = useTranslation();
 
   return (
     <div className="overflow-x-auto">
@@ -14,14 +15,20 @@ export const ClientOrdersTable: React.FC = () => {
         <thead>
           <tr className="border-b bg-gray-100">
             <th className="p-4 text-left font-medium text-gray-700">
-              Order ID
+              {t("clientOrdersTable.orderId")}
             </th>
-            <th className="p-4 text-left font-medium text-gray-700">Food</th>
             <th className="p-4 text-left font-medium text-gray-700">
-              Quantity
+              {t("clientOrdersTable.food")}
             </th>
-            <th className="p-4 text-left font-medium text-gray-700">Status</th>
-            <th className="p-4 text-left font-medium text-gray-700">Time</th>
+            <th className="p-4 text-left font-medium text-gray-700">
+              {t("clientOrdersTable.quantity")}
+            </th>
+            <th className="p-4 text-left font-medium text-gray-700">
+              {t("clientOrdersTable.status")}
+            </th>
+            <th className="p-4 text-left font-medium text-gray-700">
+              {t("clientOrdersTable.time")}
+            </th>
           </tr>
         </thead>
         <tbody>

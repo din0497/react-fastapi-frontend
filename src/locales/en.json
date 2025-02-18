@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "restaurantManager": "Restaurant Manager",
+    "order": "Order",
+    "clientDashboard": "Client Dashboard",
+    "restaurantDashboard": "Restaurant Dashboard"
+  },
+  "clientOrdersTable": {
+    "orderId": "Order ID",
+    "food": "Food",
+    "quantity": "Quantity",
+    "status": "Status",
+    "time": "Time"
+  },
+  "ordersTable": {
+    "orderId": "Order ID",
+    "food": "Food",
+    "quantity": "Quantity",
+    "status": "Status",
+    "time": "Time",
+    "actions": "Actions",
+    "statusOptions": {
+      "received": "Received",
+      "preparing": "Preparing",
+      "completed": "Completed"
+    }
+  },
+  "restaurantOrdersTable": {
+    "orderId": "Order ID",
+    "food": "Food",
+    "quantity": "Quantity",
+    "status": "Status",
+    "time": "Time",
+    "actions": "Actions",
+    "statusOptions": {
+      "pending": "Pending",
+      "received": "Received",
+      "preparing": "Preparing",
+      "completed": "Completed"
+    }
+  },
+  "restaurantDashboard": {
+    "orderManagement": "Order Management"
+  },
+  "clientDashboard": {
+    "orderDashboard": "Order Dashboard"
+  },
+  "orderForm": {
+    "placeYourOrder": "Place Your Order",
+    "foodNamePlaceholder": "Food Name",
+    "submitOrder": "Submit Order",
+    "placingOrder": "Placing Order...",
+    "successTitle": "Success",
+    "successMessage": "Order placed successfully!",
+    "errorTitle": "Error",
+    "errorMessage": "Failed to place order. Please try again."
+  }
+}
